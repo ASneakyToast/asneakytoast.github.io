@@ -1,0 +1,20 @@
+{
+	"version": 3,
+	"file": "home.css",
+	"sources": [
+		"home.sass",
+		"_sass/variables.sass",
+		"_sass/mixins/buttons.sass",
+		"_sass/mixins/containers.sass",
+		"_sass/mixins/syantax.sass"
+	],
+	"sourcesContent": [
+		"$baseurl: \"\";\n@import \"variables\";\n@import \"mixins/buttons\";\n@import \"mixins/containers\";\n@import \"mixins/syantax\";\n\n.about {\n  &__text {\n    display: inline-block;\n    width: 50%;\n    margin: 8px 0; }\n  &__avatar {\n    display: inline-block;\n    float: right; }\n  &__button {\n    justify-self: start; } }\n\n.artwork {\n  &__type {\n    display: inline-block;\n    font-weight: lighter;\n    margin: 8px 0; }\n  &__title {\n    display: inline-block;\n    margin: 8px 4px;\n    font-size: 18px; }\n  &__image {\n    width: 100%;\n    max-height: 150px;\n    box-shadow: $shadow-2dp;\n    margin: 4px 0; } }\n",
+		"$yellow: #FFC845;\n$black: #222222;\n$gray: #333333;\n$red: #CF4520;\n\n$font-header: \"Roboto\", \"Open Sans\", sans-serif;\n$font-body: \"Open Sans\", sans-serif;\n\n$shadow-2dp: 0 2px 4px 0 rgba(0,0,0,0.5);\n$shadow-3dp: 0 3px 6px 0 rgba(0,0,0,0.5);\n\n",
+		".button-primary {\n  border: 1px solid $yellow;\n  background-color: $gray;\n  color: $yellow;\n  padding: 8px 12px; }\n\n.button-secondary {\n  border: none;\n  background-color: transparent;\n  color: $yellow;\n  outline: none;\n  text-decoration: underline; }\n\n.button-inline {\n  color: $yellow;\n  text-decoration: underline;\n  font-size: 16px; }\n",
+		".container {\n  background-color: $gray;\n  display: grid;\n  grid-template-columns: 1fr;\n  grid-template-rows: auto;\n  grid-template-areas: \"header\" \"body\" \"footer\";\n  column-gap: 16px;\n  row-gap: 8px;\n  padding: 16px;\n\n  &__header {\n    background-color: $yellow;\n    box-shadow: $shadow-3dp;\n    color: $black;\n    font-size: 18px;\n    grid-area: header;\n    padding: 8px 16px 8px 16px;\n    margin-left: -16px; }\n\n  &__body {\n    color: $yellow;\n    grid-area: body; }\n\n  &__footer {\n    grid-area: footer;\n    justify-self: end;\n    margin: 8px 0; } }\n",
+		"syantax-colon {\n  color: $yellow; }\n"
+	],
+	"names": [],
+	"mappings": "AEAA,AAAA,eAAe,CAAC,EACd,MAAM,EAAE,GAAG,CAAC,KAAK,CDDV,OAAO,ECEd,gBAAgB,EDAX,OAAO,ECCZ,KAAK,EDHE,OAAO,ECId,OAAO,EAAE,QAAQ,GAAG;;AAEtB,AAAA,iBAAiB,CAAC,EAChB,MAAM,EAAE,IAAI,EACZ,gBAAgB,EAAE,WAAW,EAC7B,KAAK,EDTE,OAAO,ECUd,OAAO,EAAE,IAAI,EACb,eAAe,EAAE,SAAS,GAAG;;AAE/B,AAAA,cAAc,CAAC,EACb,KAAK,EDdE,OAAO,ECed,eAAe,EAAE,SAAS,EAC1B,SAAS,EAAE,IAAI,GAAG;;AChBpB,AAAA,UAAU,CAAC,EACT,gBAAgB,EFCX,OAAO,EEAZ,OAAO,EAAE,IAAI,EACb,qBAAqB,EAAE,GAAG,EAC1B,kBAAkB,EAAE,IAAI,EACxB,mBAAmB,EAAE,wBAAwB,EAC7C,UAAU,EAAE,IAAI,EAChB,OAAO,EAAE,GAAG,EACZ,OAAO,EAAE,IAAI,GAkBO;;AA1BtB,AAUE,kBAVQ,CAUE,EACR,gBAAgB,EFXX,OAAO,EEYZ,UAAU,EFHD,CAAC,CAAC,GAAG,CAAC,GAAG,CAAC,CAAC,CAAC,kBAAe,EEIpC,KAAK,EFZD,OAAO,EEaX,SAAS,EAAE,IAAI,EACf,SAAS,EAAE,MAAM,EACjB,OAAO,EAAE,iBAAiB,EAC1B,WAAW,EAAE,KAAK,GAAG;;AAjBzB,AAmBE,gBAnBQ,CAmBA,EACN,KAAK,EFpBA,OAAO,EEqBZ,SAAS,EAAE,IAAI,GAAG;;AArBtB,AAuBE,kBAvBQ,CAuBE,EACR,SAAS,EAAE,MAAM,EACjB,YAAY,EAAE,GAAG,EACjB,MAAM,EAAE,KAAK,GAAG;;AC1BpB,AAAA,aAAa,CAAC,EACZ,KAAK,EHDE,OAAO,GGCG;;AJKnB,AACE,YADI,CACI,EACN,OAAO,EAAE,YAAY,EACrB,KAAK,EAAE,GAAG,EACV,MAAM,EAAE,KAAK,GAAG;;AAJpB,AAKE,cALI,CAKM,EACR,OAAO,EAAE,YAAY,EACrB,KAAK,EAAE,KAAK,GAAG;;AAPnB,AAQE,cARI,CAQM,EACR,YAAY,EAAE,KAAK,GAAG;;AAE1B,AACE,cADM,CACE,EACN,OAAO,EAAE,YAAY,EACrB,WAAW,EAAE,OAAO,EACpB,MAAM,EAAE,KAAK,GAAG;;AAJpB,AAKE,eALM,CAKG,EACP,OAAO,EAAE,YAAY,EACrB,MAAM,EAAE,OAAO,EACf,SAAS,EAAE,IAAI,GAAG;;AARtB,AASE,eATM,CASG,EACP,KAAK,EAAE,IAAI,EACX,UAAU,EAAE,KAAK,EACjB,UAAU,ECrBD,CAAC,CAAC,GAAG,CAAC,GAAG,CAAC,CAAC,CAAC,kBAAe,EDsBpC,MAAM,EAAE,KAAK,GAAG"
+}
