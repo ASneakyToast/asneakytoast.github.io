@@ -1,0 +1,7 @@
+.artwork_card { border: 1px solid #FFC845; border-radius: 3px; }
+
+.artwork_card__title { padding: 4px 8px; }
+
+.artworks__list { display: grid; grid-template-columns: 1fr 1fr; grid-gap: 16px; padding: 8px 0; }
+
+/*# sourceMappingURL=artworks.css.map */

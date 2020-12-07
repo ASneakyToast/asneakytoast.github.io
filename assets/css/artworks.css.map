@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "artworks.css",
+	"sources": [
+		"artworks.sass",
+		"_sass/variables.sass",
+		"_sass/includes/artwork-card.sass"
+	],
+	"sourcesContent": [
+		"@import \"variables\";\n@import \"includes/artwork-card\";\n\n.artworks {\n  &__list {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    grid-gap: 16px;\n    padding: 8px 0; } }\n",
+		"$yellow: #FFC845;\n$black: #222222;\n$gray: #333333;\n$grey: #555555;\n$red: #CF4520;\n\n$font-header: \"Roboto\", \"Open Sans\", sans-serif;\n$font-body: \"Open Sans\", sans-serif;\n\n$shadow-2dp: 0 2px 4px 0 rgba(0,0,0,0.5);\n$shadow-3dp: 0 3px 6px 0 rgba(0,0,0,0.5);\n\n",
+		".artwork_card {\n  border: 1px solid $yellow;\n  border-radius: 3px;\n\n  &__title {\n    padding: 4px 8px; } }\n"
+	],
+	"names": [],
+	"mappings": "AEAA,AAAA,aAAa,CAAC,EACZ,MAAM,EAAE,GAAG,CAAC,KAAK,CDDV,OAAO,ECEd,aAAa,EAAE,GAAG,GAGK;;AALzB,AAIE,oBAJW,CAIF,EACP,OAAO,EAAE,OAAO,GAAG;;AFFvB,AACE,eADO,CACC,EACN,OAAO,EAAE,IAAI,EACb,qBAAqB,EAAE,OAAO,EAC9B,QAAQ,EAAE,IAAI,EACd,OAAO,EAAE,KAAK,GAAG"
+}

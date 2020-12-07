@@ -2,12 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width">
-    <link rel='stylesheet' href="assets/css/base.css">
+    <link rel='stylesheet' href="/assets/css/base.css">
     <title>Joel Lithgow</title>
   </head>
   <body>
     <div class="header">
-  <h1 class="header__logo">Joel Lithgow</h1>
+  <a class="header__logo" href="/">
+    <h1>Jlithgow.com</h1>
+  </a>
 </div>
 
     <script src="//cdn.jsdelivr.net/npm/eruda"></script>
@@ -17,56 +19,87 @@
 
 
 <div class="about container">
-  <h2 class="container__header">Jack of all trades,<br>master of none.</h2>
+  <a href="/about.html">
+    <h2 class="container__header">/Joel Lithgow</h2>
+  </a>
   <div class="container__body">
+    <img src="assets/media/avatar__1.jpg" alt='Portrait photo.' class='about__avatar'>
+    <h3 class="about__text">Jack of all trades,<br>master of none.</h3>
     <p class="about__text">artist, designer, developer, I like to learn every part of the process and something more and stuff so lik eyeah should not get so caught up on this par of it.</p>
-    <p>Personal override!</p>
-    <img src="assets/images/avatar.jpg" alt='Portrait photo.' class='about__avatar'>
   </div>
-  <button class="container__footer about__button button-secondary">&gt; learn more about me</button>
+  <a href="/about.html" class="container__footer about__button">
+    <button class="button-secondary">> learn more about me</button>
+  </a>
 </div>
 
 <div class="artwork container container__theme_secondary">
-  <h2 class='container__header'>Artwork</h2>
+  <a href="/artwork">
+    <h2 class='container__header'>/Artwork</h2>
+  </a>
   <div class="container__body">
-    <div class="artwork__latest">
+    
+    <div class="container__block">
       
-      <h3 class="artwork__type">/latest <span class="syantax-colon">:</span></h3>
-      <a href="/artwork/rock_experiment_1.html">
-        <h4 class="artwork__title button-inline">rock_experiment_1</h4>
-      </a>
-      <img class="artwork__image" src="/assets/artwork/rock_experiment_1/thumbnail.jpg">
-      <p></p>
-      <ul class="artwork__latest_tags">
-        
-      </ul>
+      <div class="artwork_item">
+  <h3 class="artwork_item__type">- latest <span class="syantax-colon">:</span></h3>
+  <a href="">
+    <h4 class="artwork_item__title button-inline"></h4>
+  </a>
+  
+  <p></p>
+  <ul class="artwork_item__latest_tags">
+    
+  </ul>
+</div>
+
     </div>
-    <div class="artwork__featured">
+
+    <div class="container__block">
       
-      <h4></h4>
+      <div class="artwork_item">
+  <h3 class="artwork_item__type">- featured <span class="syantax-colon">:</span></h3>
+  <a href="">
+    <h4 class="artwork_item__title button-inline"></h4>
+  </a>
+  
+  <p></p>
+  <ul class="artwork_item__latest_tags">
+    
+  </ul>
+</div>
+
     </div>
+
   </div>
-  <button class="button-primary container__footer">&gt; see all artwork</button>
+  <a href="artwork/artworks.html" class="container__footer">
+    <button class="button-primary">> see all artwork</button>
+  </a>
 </div>
 
 
 
-<div class='social'>
-  <h3>Social</h3>
-  <ul class='social__list'>
-    <li>
-      <p>/email :</p>
+<div class="social container">
+  <a href="/social.html">
+    <h2 class="container__header">/Social</h2>
+  </a>
+  <ul class="social__list container__body">
+    <li class="social__item container__block">
+      <h3>- email <span class="syantax-colon">:</span></h3>
       <a href='mailto:joelnotlithgow@gmail.com'>
-        joelnotlithgow@gmail.com
+        <h4 class="button-inline">joelnotlithgow@gmail.com</h4>
       </a>
     </li>
-    <li>
-      <p>/instagram :</p>
+    <li class="social__item container__block">
+      <h3>- instagram <span class="syantax-colon">:</span></h3>
       <a href="www.instagram.com/joellithgow">
-        joellithgow
+        <h4 class="button-inline">joellithgow</h4>
       </a>
     </li>
   </ul>
+</div>
+
+    <div class="footer">
+  <h1 class="footer__logo">2020</h1>
 </div>
 
   </body>
